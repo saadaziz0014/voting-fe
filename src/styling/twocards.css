@@ -1,0 +1,86 @@
+/* General Card Styles */
+.twocards-card {
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.25);
+  border: none;
+  overflow: hidden;
+  height: 100%; /* Ensures the card occupies full height */
+  margin-bottom: 10px;
+}
+
+.twocards-header {
+  background-color: #28a745;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.twocards-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Table Styles with Scrollbar */
+.twocards-table-container {
+  max-height: 300px; /* Set maximum height for the table container */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
+  margin-bottom: 50px;
+}
+
+.table {
+  margin-bottom: 0; /* Ensure the table fits inside the card */
+}
+
+.table th {
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+}
+
+.table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.twocards-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.twocards-btn:hover {
+  background-color: #218838;
+  color: #ffffff;
+}
+
+/* Right Card Image and Text */
+.twocards-image {
+  max-width: 200px;
+  max-height: 200px; /* Constrains the height of the image */
+  object-fit: cover; /* Ensures the image scales properly */
+  border-radius: 10px;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.twocards-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: #495057;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .twocards-card {
+    margin-bottom: 20px; /* Add spacing between cards on small screens */
+  }
+
+  .table {
+    font-size: 0.85rem;
+  }
+
+  .twocards-table-container {
+    max-height: 300px; /* Reduce height for smaller screens */
+  }
+}

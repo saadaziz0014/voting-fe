@@ -1,0 +1,126 @@
+/* General Styles */
+.admin-login-body {
+  background-color: #f8f9fa;
+  font-family: "Arial", sans-serif;
+}
+
+.admin-login-card {
+  width: 900px;
+  max-width: 100%;
+  border-radius: 15px;
+  padding: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 255, 0.2);
+  display: flex;
+}
+
+.admin-login-left {
+  background-color: #1c1f4a; /* Dark Blue */
+  color: #ffffff;
+  width: 45%;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-login-image {
+  max-width: 80%;
+  margin-bottom: 1rem;
+}
+
+.admin-login-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.admin-login-form {
+  margin-top: 2rem;
+}
+
+.admin-login-text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+.admin-login-right {
+  width: 55%;
+  background-color: #ffffff;
+}
+
+.admin-login-form-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1c1f4a; /* Dark Blue */
+}
+
+.admin-login-form-subtitle {
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+.admin-login-label {
+  font-weight: 600;
+  color: #495057;
+}
+
+.admin-login-input {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.admin-login-input:focus {
+  border-color: #1c1f4a;
+  box-shadow: 0 0 0 0.2rem rgba(28, 31, 74, 0.25);
+}
+
+.admin-login-btn {
+  background-color: #1c1f4a; /* Dark Blue */
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+
+.admin-login-btn:hover {
+  background-color: #0e1137; /* Darker Blue */
+  color: #ffffff;
+}
+
+.admin-login-footer-text {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.admin-login-link {
+  color: #1c1f4a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.admin-login-link:hover {
+  color: #0e1137;
+  text-decoration: underline;
+}
+
+/* Responsive Styles for screens below 768px */
+@media only screen and (max-width: 768px) {
+  .admin-login-card {
+    flex-direction: column;
+  }
+
+  .admin-login-left {
+    display: none !important;
+  }
+
+  .admin-login-right {
+    width: 100%;
+  }
+
+  .admin-login-card {
+    width: 100%;
+  }
+}

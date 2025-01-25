@@ -1,0 +1,103 @@
+/* General Card Styles */
+.admin-card {
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(28, 31, 74, 0.25);
+  border: none;
+  overflow: hidden;
+  height: 100%; /* Ensures the card occupies full height */
+}
+
+.admin-header {
+  background-color: #1c1f4a;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.admin-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Table Styles with Scrollbar */
+.admin-table-container {
+  max-height: 300px; /* Set maximum height for the table container */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
+}
+
+.table {
+  margin-bottom: 0; /* Ensure the table fits inside the card */
+}
+
+.table th {
+  background-color: #1c1f4a;
+  color: white;
+  text-align: center;
+}
+
+.custom-blue {
+  background-color: #1c1f4a !important;
+}
+
+.table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Buttons */
+.admin-btn {
+  background-color: #1c1f4a;
+  color: white;
+  border: none;
+}
+
+.admin-btn:hover {
+  background-color: #14173a;
+  color: #ffffff;
+}
+
+/* Right Card Image and Text */
+.admin-image {
+  max-width: 200px;
+  max-height: 200px; /* Constrains the height of the image */
+  object-fit: cover; /* Ensures the image scales properly */
+  border-radius: 10px;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.admin-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: #495057;
+}
+
+/* Scrollbar Customization */
+.admin-table-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.admin-table-container::-webkit-scrollbar-thumb {
+  background-color: #1c1f4a;
+  border-radius: 3px;
+}
+
+.admin-table-container::-webkit-scrollbar-thumb:hover {
+  background-color: #14173a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-card {
+    margin-bottom: 20px; /* Add spacing between cards on small screens */
+  }
+
+  .table {
+    font-size: 0.85rem;
+  }
+
+  .admin-table-container {
+    max-height: 300px; /* Reduce height for smaller screens */
+  }
+}

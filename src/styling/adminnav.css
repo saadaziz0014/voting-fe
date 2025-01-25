@@ -1,0 +1,63 @@
+/* General Navbar Styles */
+.bluenav-navbar {
+  background-color: #1c1f4a;
+  padding: 0.8rem 1rem;
+  box-shadow: 0 4px 10px rgba(28, 31, 74, 0.25);
+}
+
+.bluenav-brand {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.bluenav-brand:hover {
+  color: #c8ccef;
+}
+
+.bluenav-username {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.bluenav-icon-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.bluenav-icon-link:hover {
+  color: #c8ccef;
+}
+
+.bluenav-icon {
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+.bluenav-icon-link:hover .bluenav-icon {
+  transform: scale(1.2);
+}
+
+/* Mobile View Adjustments */
+@media only screen and (max-width: 768px) {
+  .bluenav-navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+
+  .bluenav-brand {
+    font-size: 1.2rem;
+  }
+
+  .bluenav-username {
+    font-size: 0.9rem;
+  }
+
+  .bluenav-icon {
+    font-size: 1rem;
+  }
+}

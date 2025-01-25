@@ -1,0 +1,77 @@
+/* General Styles */
+.settings-body {
+  background-color: #f8f9fa;
+  font-family: "Arial", sans-serif;
+}
+
+.settings-card {
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.2);
+  border: none;
+  overflow: hidden;
+}
+
+.settings-header {
+  background-color: #28a745;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.settings-header-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.settings-option {
+  margin-bottom: 2rem;
+}
+
+.settings-option-title {
+  font-size: 1.25rem;
+  color: #495057;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.settings-input {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 0.75rem;
+}
+
+.settings-input:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.settings-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.settings-btn:hover {
+  background-color: #218838;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .settings-card {
+    width: 100%;
+  }
+
+  .settings-btn {
+    width: auto;
+    margin-top: 1rem;
+  }
+
+  .settings-option {
+    margin-bottom: 1rem;
+  }
+}

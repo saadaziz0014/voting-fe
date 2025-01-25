@@ -1,0 +1,112 @@
+/* Card Styles */
+.usercalendar-card {
+  width: 40%;
+  max-width: 1200px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.25);
+  border: none;
+  margin: 0 auto; /* Center the card horizontally */
+}
+
+.usercalendar-header {
+  background-color: #28a745;
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 15px 15px 0 0;
+  text-align: center; /* Center-align the header content */
+}
+
+.usercalendar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0; /* Remove default margins */
+}
+
+/* Calendar Container */
+.calendar-container {
+  display: flex;
+  justify-content: center; /* Center the calendar horizontally */
+  align-items: center; /* Center the calendar vertically */
+  margin-top: 1rem; /* Add spacing from the header */
+  width: 100%;
+}
+
+/* Calendar Grid */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  justify-content: center; /* Center the grid horizontally */
+}
+
+/* Calendar Days */
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #ffffff;
+  min-width: 80px;
+  height: 100px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.day .date {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #495057;
+}
+
+.day .vote-name {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #28a745;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Highlighted (Marked) Dates */
+.day.marked {
+  background-color: #e6f5e6;
+  border-color: #28a745;
+  position: relative;
+}
+
+.day.marked .vote-name {
+  color: #218838;
+}
+
+/* Dot Styling for react-calendar */
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #28a745;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .usercalendar-card {
+    width: 90%;
+  }
+
+  .calendar-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .day {
+    height: 80px;
+  }
+
+  .day .date {
+    font-size: 1rem;
+  }
+
+  .day .vote-name {
+    font-size: 0.8rem;
+  }
+}

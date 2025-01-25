@@ -1,0 +1,99 @@
+/* General Card Styles */
+.admin-details-card {
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(28, 31, 74, 0.25);
+  border: none;
+  margin-bottom: 40px;
+}
+
+.admin-details-header {
+  background-color: #1c1f4a;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.admin-details-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.admin-details-subtitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1c1f4a;
+}
+
+.admin-details-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+}
+
+.admin-results-label {
+  font-weight: bold;
+  color: #1c1f4a;
+  font-size: 1.5rem;
+}
+
+.admin-results-value {
+  font-weight: bold;
+  color: #495057;
+  font-size: 1.5rem;
+}
+
+/* Feedback Section Styles */
+.admin-feedback-container {
+  max-height: 200px;
+  overflow-y: auto; /* Enable scrolling for feedback list */
+  border: 1px solid #1c1f4a;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.admin-feedback-list {
+  margin: 0;
+  padding: 0;
+}
+
+.admin-feedback-list .list-group-item {
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.admin-feedback-list .list-group-item:last-child {
+  border-bottom: none;
+}
+
+/* Scrollbar Customization */
+.admin-feedback-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.admin-feedback-container::-webkit-scrollbar-thumb {
+  background-color: #1c1f4a;
+  border-radius: 3px;
+}
+
+.admin-feedback-container::-webkit-scrollbar-thumb:hover {
+  background-color: #14173a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-details-title {
+    font-size: 1.3rem;
+  }
+
+  .admin-details-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .admin-details-text {
+    font-size: 0.9rem;
+  }
+
+  .admin-feedback-container {
+    max-height: 150px;
+  }
+}
