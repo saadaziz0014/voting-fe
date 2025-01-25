@@ -41,16 +41,16 @@ function App() {
             path="/userdashboard"
             element={<UserDashboard></UserDashboard>}
           />
-          <Route path="/uservotingdetails" element={<UserVoteDetails />} />
-          <Route path="/ideasubmit" element={<SuggestIdeas />} />
-          <Route path="/settings" element={<Settings />} />
-          <Route path="/adminlogin" element={<AdminLogin />} />
-          <Route path="/admindashboard" element={<AdminDashboard />} />
-          <Route path="/adminlog" element={<AdminLogs></AdminLogs>} />
-          <Route path="/createvote" element={<CreateVote />} />
-          <Route path="/userideas" element={<UserIdeas />} />
+          <Route path="/voting/uservotingdetails" element={<UserVoteDetails />} />
+          <Route path="/voting/ideasubmit" element={<SuggestIdeas />} />
+          <Route path="/voting/settings" element={<Settings />} />
+          <Route path="/voting/adminlogin" element={<AdminLogin />} />
+          <Route path="/voting/admindashboard" element={<AdminDashboard />} />
+          <Route path="/voting/adminlog" element={<AdminLogs></AdminLogs>} />
+          <Route path="/voting/createvote" element={<CreateVote />} />
+          <Route path="/voting/userideas" element={<UserIdeas />} />
           <Route
-            path="/adminvotingdetails"
+            path="/voting/adminvotingdetails"
             element={<AdminVotingDetails></AdminVotingDetails>}
           />
         </Routes>
