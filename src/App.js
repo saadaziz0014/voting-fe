@@ -35,8 +35,8 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<SignUp></SignUp>} />
-          <Route path="/login" element={<SignIn></SignIn>} />
+          <Route path="/voting" element={<SignUp></SignUp>} />
+          <Route path="/voting/login" element={<SignIn></SignIn>} />
           <Route
             path="/userdashboard"
             element={<UserDashboard></UserDashboard>}

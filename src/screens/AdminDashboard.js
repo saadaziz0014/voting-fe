@@ -7,7 +7,7 @@ import AdminNav from "../components/AdminNav";
 export default function AdminDashboard() {
   const navigate = useNavigate();
   function navigation() {
-    navigate("/createvote");
+    navigate("/voting/createvote");
   }
   return (
     <>

@@ -62,7 +62,7 @@ export default function SuggestIdeas() {
           setIdeaName("");
           setDescription("");
           setImpacts("");
-          setTimeout(() => navigate("/userdashboard"), 1500); // Navigate after showing success toast
+          setTimeout(() => navigate("/voting/userdashboard"), 1500); // Navigate after showing success toast
         }
       } catch (error) {
         console.error("Error submitting idea:", error);

@@ -6,16 +6,16 @@ export default function AdminNav() {
 
   // Define onClick handlers to navigate to different pages
   const handleNavigateDashboard = () => {
-    navigate("/admindashboard"); // Navigate to Admin Dashboard
+    navigate("/voting/admindashboard"); // Navigate to Admin Dashboard
   };
 
   const handleNavigateIdeas = () => {
-    navigate("/adminlog"); // Navigate to Admin View Ideas page
+    navigate("/voting/adminlog"); // Navigate to Admin View Ideas page
   };
 
   const handleLogout = () => {
     // You can add logout logic here (e.g., clearing local storage or session)
-    navigate("/adminlogin"); // Navigate to login page
+    navigate("/voting/adminlogin"); // Navigate to login page
   };
 
   return (
