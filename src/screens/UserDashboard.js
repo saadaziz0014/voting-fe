@@ -8,7 +8,7 @@ import CustomCalendar from "../components/CustomCalendar";
 export default function UserDashboard() {
   const navigate = useNavigate();
   function navigation() {
-    navigate("/voting/ideasubmit");
+    navigate("/ideasubmit");
   }
   return (
     <>

@@ -69,7 +69,7 @@ export default function SignIn() {
         sessionStorage.setItem("userId", response.data.user.userId);
         sessionStorage.setItem("userFirstName", response.data.user.firstName);
         sessionStorage.setItem("userEmail", response.data.user.email);
-        setTimeout(() => navigate("/voting/userdashboard"), 2000); // Navigate to the user dashboard after verification
+        setTimeout(() => navigate("/userdashboard"), 2000); // Navigate to the user dashboard after verification
       }
     } catch (error) {
       if (error.response && error.response.data) {
@@ -179,7 +179,7 @@ export default function SignIn() {
             </form>
             <p className="signin-footer-text text-center mt-3">
               Don't have an account?{" "}
-              <a href="/voting" className="signin-link">
+              <a href="" className="signin-link">
                 Sign Up
               </a>
             </p>

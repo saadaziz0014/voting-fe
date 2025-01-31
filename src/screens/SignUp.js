@@ -130,7 +130,7 @@ export default function SignUp() {
       if (response.ok) {
         toast.success("OTP verified! Account created.");
         setOtpModal(false);
-        navigate("/voting/login");
+        navigate("/login");
       } else {
         toast.error(data.message || "Invalid OTP. Try again.");
       }
@@ -360,7 +360,7 @@ export default function SignUp() {
               <a
                 href="#"
                 className="signup-link"
-                onClick={() => navigate("/voting/login")}
+                onClick={() => navigate("/login")}
               >
                 Sign In
               </a>

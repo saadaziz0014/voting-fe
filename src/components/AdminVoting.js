@@ -26,7 +26,7 @@ export default function AdminVoting() {
 
   // Handle view details button click
   const handleViewDetails = (idea) => {
-    navigate(`/voting/adminvotingdetails`, { state: { idea } });
+    navigate(`/adminvotingdetails`, { state: { idea } });
   };
 
   // Handle delete button click

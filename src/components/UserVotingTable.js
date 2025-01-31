@@ -26,7 +26,7 @@ export default function UserVotingTable() {
   // Handle the "View Details" button click
   const handleViewDetails = (idea) => {
     // Navigate to the details page with the vote name as a URL parameter
-    navigate(`/voting/uservotingdetails`, { state: { idea } });
+    navigate(`/uservotingdetails`, { state: { idea } });
   };
 
   return (

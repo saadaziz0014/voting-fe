@@ -6,22 +6,22 @@ export default function UserNavbar() {
 
   // Navigate to the settings page
   const settingsClicked = () => {
-    navigate("/voting/settings");
+    navigate("/settings");
   };
 
   // Navigate to the user dashboard
   const dashboardClicked = () => {
-    navigate("/voting/userdashboard");
+    navigate("/userdashboard");
   };
 
   const ideasClicked = () => {
-    navigate("/voting/userideas");
+    navigate("/userideas");
   };
   // Navigate to the login page (logout functionality)
   const logoutClicked = () => {
     sessionStorage.clear();
 
-    navigate("/voting/login");
+    navigate("/login");
   };
 
   return (

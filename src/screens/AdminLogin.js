@@ -23,7 +23,7 @@ export default function AdminLogin() {
       // If login is successful, show a success toast and navigate
       if (response.status === 200) {
         toast.success("Login successful!", { autoClose: 1000 });
-        setTimeout(() => navigate("/voting/admindashboard"), 2000); // Navigate after showing success toast
+        setTimeout(() => navigate("/admindashboard"), 2000); // Navigate after showing success toast
       }
     } catch (error) {
       // If error, show error toast
